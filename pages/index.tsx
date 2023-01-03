@@ -61,8 +61,6 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     web3.init();
-    setToken([]);
-    setTokenStaking([]);
     isApprovalCheck();
     getMyNFTInfo();
     getMyNFTInfoStaking();
