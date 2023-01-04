@@ -465,7 +465,11 @@ const Home: NextPage = () => {
       <br />
       <br />
       <div className="w-full flex justify-center">
-        <button className="bg-red-700 hover:bg-green-900 text-white font-bold py-2 px-4 btn-wide rounded-full">
+        <button
+          className="bg-red-700 hover:bg-green-900 text-white font-bold py-2 px-4 btn-wide rounded-full"
+          onClick={() => {
+            getMyNFTInfo();
+          }}>
           가지고 있는 NFT
         </button>
       </div>
@@ -501,7 +505,11 @@ const Home: NextPage = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <button className="bg-red-700 hover:bg-green-900 text-white font-bold py-2 px-4 btn-wide rounded-full">
+        <button
+          className="bg-red-700 hover:bg-green-900 text-white font-bold py-2 px-4 btn-wide rounded-full"
+          onClick={() => {
+            getMyNFTInfoStaking();
+          }}>
           스테이킹한 NFT
         </button>
       </div>
