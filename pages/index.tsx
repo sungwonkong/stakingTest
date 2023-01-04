@@ -212,10 +212,10 @@ const Home: NextPage = () => {
     );
 
     if (
-      typeof window !== "undefined" &&
-      receipt !== "undefined" &&
-      receipt !== null &&
-      receipt !== ""
+      typeof window != "undefined" &&
+      receipt != "undefined" &&
+      receipt != null &&
+      receipt != ""
     ) {
       setTotalCnt(Object.keys(receipt).length);
     }
@@ -284,10 +284,10 @@ const Home: NextPage = () => {
     );
 
     if (
-      typeof window !== "undefined" &&
-      receipt !== "undefined" &&
-      receipt !== null &&
-      receipt !== ""
+      typeof window != "undefined" &&
+      receipt != "undefined" &&
+      receipt != null &&
+      receipt != ""
     ) {
       setTotalCntStaking(Object.keys(receipt).length);
     }
@@ -411,9 +411,9 @@ const Home: NextPage = () => {
       {isLogin ? (
         <div>
           {address}
-          <button className="btn btn-xs" onClick={disconnect}>
+          {/* <button className="btn btn-xs" onClick={disconnect}>
             disconnect
-          </button>
+          </button> */}
         </div>
       ) : (
         <div></div>
