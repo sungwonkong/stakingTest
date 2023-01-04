@@ -64,11 +64,11 @@ const Home: NextPage = () => {
     if (window.ethereum.selectedAddress !== undefined) {
       login();
       console.log(window.ethereum.selectedAddress);
-      isApprovalCheck();
-      getMyNFTInfo();
-      getMyNFTInfoStaking();
-      getTokenBalance();
     }
+    isApprovalCheck();
+    getMyNFTInfo();
+    getMyNFTInfoStaking();
+    getTokenBalance();
   }, []);
 
   const login = async () => {
