@@ -61,13 +61,13 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     web3.init();
-    isApprovalCheck();
-    getMyNFTInfo();
-    getMyNFTInfoStaking();
-    getTokenBalance();
     if (window.ethereum.selectedAddress !== undefined) {
       login();
       console.log(window.ethereum.selectedAddress);
+      isApprovalCheck();
+      getMyNFTInfo();
+      getMyNFTInfoStaking();
+      getTokenBalance();
     }
   }, []);
 
